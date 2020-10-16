@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
 	void Start() {
 		this.parachute = transform.Find("parachute").GetComponent<SpriteRenderer>();
 		playerRb = GetComponent<Rigidbody>();
+		
+		Debug.Log(Vector3.Angle(new Vector3(1, 5, -7), new Vector3(8, 0, -6)));
 	}
 	
     void Update() {
